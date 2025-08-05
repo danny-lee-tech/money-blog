@@ -8,8 +8,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://danny-lee-tech.github.io/',
-  base: '/money-blog',
+  site: 'https://danny-lee-tech.github.io/money-blog',
+  base: '/',
   integrations: [mdx(), sitemap()],
 
   vite: {

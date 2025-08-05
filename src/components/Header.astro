@@ -1,15 +1,16 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
+const basePath = import.meta.env.BASE_URL;
 ---
 
 <header class="m-0 py-0 px-[1em] bg-white shadow-header">
 	<nav class="flex items-center justify-between">
-		<h2 class="m-0 text-[1em]"><a class="px-[0.5em] py-[1em] text-black border-b-[4px] border-solid border-transparent no-underline active:no-underline" href="/">{SITE_TITLE}</a></h2>
+		<h2 class="m-0 text-[1em]"><a class="px-[0.5em] py-[1em] text-black border-b-[4px] border-solid border-transparent no-underline active:no-underline" href={basePath}>{SITE_TITLE}</a></h2>
 		<div class="internal-links">
-			<HeaderLink class="px-[0.5em] py-[1em] text-black border-b-[4px] border-solid border-transparent no-underline active:no-underline" href="/">Home</HeaderLink>
-			<HeaderLink class="px-[0.5em] py-[1em] text-black border-b-[4px] border-solid border-transparent no-underline active:no-underline" href="/blog">Blog</HeaderLink>
-			<HeaderLink class="px-[0.5em] py-[1em] text-black border-b-[4px] border-solid border-transparent no-underline active:no-underline" href="/about">About</HeaderLink>
+			<HeaderLink class="px-[0.5em] py-[1em] text-black border-b-[4px] border-solid border-transparent no-underline active:no-underline" href={basePath}>Home</HeaderLink>
+			<HeaderLink class="px-[0.5em] py-[1em] text-black border-b-[4px] border-solid border-transparent no-underline active:no-underline" href={`${basePath}/blog`}>Blog</HeaderLink>
+			<HeaderLink class="px-[0.5em] py-[1em] text-black border-b-[4px] border-solid border-transparent no-underline active:no-underline" href={`${basePath}/about`}>About</HeaderLink>
 		</div>
 		<div class="hidden md:flex">
 			<a class="flex px-[0.5em] py-[1em] text-black border-b-[4px] border-solid border-transparent no-underline active:no-underline" href="https://m.webtoo.ls/@astro" target="_blank">

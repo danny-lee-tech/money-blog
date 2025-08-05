@@ -5,8 +5,10 @@ type Props = HTMLAttributes<'a'>;
 
 const { href, class: className, ...props } = Astro.props;
 const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
+var standardizeHref = href?.toString().replace(import.meta.env.BASE_URL, '');
+standardizeHref = standardizeHref == '' ? '/' : standardizeHref;
 const subpath = pathname.match(/[^\/]+/g);
-const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
+const isActive = standardizeHref === pathname || standardizeHref === '/' + (subpath?.[0] || '');
 const aClass = "inline-block " + (isActive ? "font-bold border-b-accent" : "")
 ---
 

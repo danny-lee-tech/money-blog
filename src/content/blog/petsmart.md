@@ -1,5 +1,5 @@
 ---
-title: 'Keep Pet Upkeep Cost Low'
+title: 'Pet Upkeep Cost - Petsmart'
 category: 'Loot Usage Strategy'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Aug 8 2025'

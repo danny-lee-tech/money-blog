@@ -16,9 +16,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<BaseHead title={title} description={description} />
 	</head>
 
-	<body>
+	<body class="bg-center-bg">
 		<Header />
-		<main class="w-[960px] mx-auto pt-15 pb-15 pl-5 pr-5">
+		<main class="w-[960px] mx-auto pt-15 pb-15 pl-5 pr-5 bg-post-bg">
 			<article>
 				<div class="w-full">
 					{heroImage && <Image class="mb-auto mt-auto rounded-xl shadow-custom" width={1020} height={510} src={heroImage} alt="" />}

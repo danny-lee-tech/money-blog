@@ -14,7 +14,7 @@ Our 15-year old black cat, Zoey, who we didn't think would last the year 2024, h
 <h3>Why I Started This Site</h3>
 My primary intention was to get back into programming. I haven't done heavy front-end development in about a decade.
 
-Once I decided that I wanted to do a blog of some sort, if I had to choose a topic that I had a large amount of knowledge or expertise about, it would be finding amazing deals and using various financial products/apps. I try very hard to never buy anything at full price. Hopefully, readers can gain from my insights to save some money in their own lives.
+Once I decided on doing a blog of some sort, if I had to choose a topic that I had a large amount of knowledge or expertise about, it would be finding amazing deals and using various financial products/apps. I try very hard to never buy anything at full price. Hopefully, readers can gain from my insights to save some money in their own lives.
 
 The only way this site earns money is through the affiliate links I include in my posts. I would be grateful if you'd use them, but it's not required. Referrals from friends and family are other ways to save money within your circle, so it makes sense to use their referrals. But you can rest assured that I'll never let a potential referral influence my honest opinion.
 

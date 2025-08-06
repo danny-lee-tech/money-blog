@@ -19,26 +19,47 @@ const posts = (await getCollection('blog')).sort(
 	</head>
 	<body class="bg-center-bg">
 		<Header />
-		<main class="w-[960px] mx-auto pt-15 pb-15 pl-5 pr-5 bg-[#F0F0F0]">
+		<main class="w-[960px] mx-auto mt-15 mb-15 pl-0 pr-0 bg-[#F0F0F0]">
 			<section>
-				<ul class="flex flex-wrap m-0 p-0 list-none gap-[0.5em] md:gap-8">
+				<ul class="flex flex-wrap m-0 p-0 list-none gap-[0.5em] md:gap-1">
 					{
-						posts.map((post) => (
-							<li class="w-full text-center">
-								<a class="group flex" href={`/blog/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image class="mb-2 rounded-xl group-hover:shadow-custom transition" width={360} height={180} src={post.data.heroImage} alt="" />
-									)}
-									<div class="m-auto">
-										<h4 class="no-underline title m-0 leading-none text-post-link group-hover:text-accent transition">{post.data.title}</h4>
-										<p class="m-0 text-post-link no-underline">{post.data.category}</p>
-										<p class="m-0 text-gray no-underline">
-											<FormattedDate date={post.data.pubDate} />
-										</p>
-									</div>
-								</a>
-							</li>
-						))
+						posts.map((post, index) => {
+							if (index % 2 == 0) {
+								return (
+									<li class="w-full text-center border-2 border-post-border rounded-lg">
+										<a class="group flex" href={`/blog/${post.id}/`}>
+											{post.data.heroImage && (
+												<Image class="mb-2 rounded-xl group-hover:shadow-custom transition m-2 h-[180px]" width={300} height={180} src={post.data.heroImage} alt="" />
+											)}
+											<div class="m-auto">
+												<h4 class="no-underline title m-0 leading-none text-post-link group-hover:text-accent transition">{post.data.title}</h4>
+												<p class="m-0 text-post-link no-underline">{post.data.category}</p>
+												<p class="m-0 text-gray no-underline">
+													<FormattedDate date={post.data.pubDate} />
+												</p>
+											</div>
+										</a>
+									</li>
+								)
+							} else {
+								return (
+									<li class="w-full text-center bg-gray-200 border-post-border border-2 rounded-lg">
+										<a class="group flex" href={`/blog/${post.id}/`}>
+											<div class="m-auto">
+												<h4 class="no-underline title m-0 leading-none text-post-link group-hover:text-accent transition">{post.data.title}</h4>
+												<p class="m-0 text-post-link no-underline">{post.data.category}</p>
+												<p class="m-0 text-gray no-underline">
+													<FormattedDate date={post.data.pubDate} />
+												</p>
+											</div>
+											{post.data.heroImage && (
+												<Image class="mb-2 rounded-xl group-hover:shadow-custom transition m-2 h-[180px]" width={300} height={180} src={post.data.heroImage} alt="" />
+											)}
+										</a>
+									</li>
+								)
+							}
+						})
 					}
 				</ul>
 			</section>

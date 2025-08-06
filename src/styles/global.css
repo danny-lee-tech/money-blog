@@ -132,30 +132,42 @@
 @layer utilities {
 	body .prose h1 {
 		font-size: 3.052em;
-		margin-top: 0;
+		margin-top: 0.5em;
 		margin-bottom: 0.5em;
 	}
 	body .prose h2 {
 		font-size: 2.441em;
-		margin-top: 0;
+		margin-top: 0.5em;
 		margin-bottom: 0.5em;
 	}
 	body .prose h3 {
 		font-size: 1.953em;
-		margin-top: 0;
+		margin-top: 0.5em;
 		margin-bottom: 0.5em;
 	}
 	body .prose h4 {
 		font-size: 1.563em;
-		margin-top: 0;
+		margin-top: 0.5em;
 		margin-bottom: 0.5em;
 	}
 	body .prose h5 {
 		font-size: 1.25em;
-		margin-top: 0;
+		margin-top: 0.5em;
 		margin-bottom: 0.5em;
 	}
 	body .prose {
 		color: rgb(var(--gray-dark))
+	}
+	body .prose hr {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	body .prose li {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	body .prose p {
+		margin-top: 1em;
+		margin-bottom: 1em;
 	}
 }

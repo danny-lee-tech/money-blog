@@ -1,6 +1,7 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
+import AboutHeaderMenu from './AboutHeaderMenu.astro';
 ---
 
 <header class="m-0 py-0 px-[1em] bg-header-bg shadow-header">
@@ -9,7 +10,7 @@ import HeaderLink from './HeaderLink.astro';
 		<div class="internal-links">
 			<HeaderLink class="px-[0.5em] py-[1em] text-header-menu border-b-[4px] border-solid border-transparent no-underline active:no-underline" href="/">Home</HeaderLink>
 			<HeaderLink class="px-[0.5em] py-[1em] text-header-menu border-b-[4px] border-solid border-transparent no-underline active:no-underline" href="/blog">Blog</HeaderLink>
-			<HeaderLink class="px-[0.5em] py-[1em] text-header-menu border-b-[4px] border-solid border-transparent no-underline active:no-underline" href="/about">About</HeaderLink>
+			<AboutHeaderMenu class="px-[0.5em] py-[1em] text-header-menu border-b-[4px] border-solid border-transparent no-underline active:no-underline" href="/about">About</HeaderLink>
 		</div>
 		<div class="hidden md:flex">
 			<a class="flex px-[0.5em] py-[1em] text-[#F9F9F9] border-b-[4px] border-solid border-transparent no-underline active:no-underline" href="https://twitter.com/astrodotbuild" target="_blank">

@@ -1,3 +1,9 @@
+---
+title: 'About Me'
+description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+pubDate: 'Aug 10 2025'
+heroImage: '../../assets/animeme.jpg'
+---
 <h3>Working Life/Hiatus</h3>
 In 2024 and prior, I had a 9-to-5 job, but when I came home, I didn't have the mental capacity to handle anything else besides the chores I needed to do at that moment. My personal to-do list had grown so long that I felt an overwhelming sense of guilt, making it impossible to enjoy my day-to-day life. These obligations included managing my parents' retirement finances, figuring out a healthy setup/routine for one of our black cats that lost the ability to use her hind legs, managing my weight/exercise, and 100s of little things that needed done or maintained around the house.
 
